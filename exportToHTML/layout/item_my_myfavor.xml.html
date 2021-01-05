@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>item_my_myfavor.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000000; font-style: italic;}
+.s1 { color: #0000ff; font-weight: bold;}
+.s2 { color: #000000;}
+.s3 { color: #008000; font-weight: bold;}
+.s4 { color: #000080; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+item_my_myfavor.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s3">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s3">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+&lt;<span class="s4">RelativeLayout </span><span class="s1">xmlns:android</span><span class="s3">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s3">=&quot;230dp&quot;</span>
+    <span class="s1">android:background</span><span class="s3">=&quot;@color/white&quot;</span>
+    <span class="s1">android:paddingHorizontal</span><span class="s3">=&quot;10dp&quot;</span>&gt;
+
+    &lt;<span class="s4">RelativeLayout</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>&gt;
+
+        &lt;<span class="s4">de.hdodenhof.circleimageview.CircleImageView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/favor_touxiang&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;50dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;50dp&quot;</span>
+            <span class="s1">android:src</span><span class="s3">=&quot;@mipmap/touxiang&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;10dp&quot; </span>/&gt;
+
+        &lt;<span class="s4">TextView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/favor_yonghuming&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;用户名&quot;</span>
+            <span class="s1">android:layout_toRightOf</span><span class="s3">=&quot;@+id/favor_touxiang&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;10dp&quot;</span>
+            <span class="s1">android:layout_marginLeft</span><span class="s3">=&quot;10dp&quot;</span>
+            <span class="s1">android:textSize</span><span class="s3">=&quot;16sp&quot;</span>
+            <span class="s1">android:textColor</span><span class="s3">=&quot;@color/black&quot; </span>/&gt;
+
+        &lt;<span class="s4">TextView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/favor_time&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;2021年1月1日&quot;</span>
+            <span class="s1">android:textSize</span><span class="s3">=&quot;14sp&quot;</span>
+            <span class="s1">android:layout_below</span><span class="s3">=&quot;@+id/favor_yonghuming&quot;</span>
+            <span class="s1">android:layout_toRightOf</span><span class="s3">=&quot;@+id/favor_touxiang&quot;</span>
+            <span class="s1">android:layout_marginLeft</span><span class="s3">=&quot;10dp&quot; </span>/&gt;
+
+        &lt;<span class="s4">TextView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/favor_phone&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;来自ipone客户端&quot;</span>
+            <span class="s1">android:textSize</span><span class="s3">=&quot;14sp&quot;</span>
+            <span class="s1">android:layout_below</span><span class="s3">=&quot;@+id/favor_yonghuming&quot;</span>
+            <span class="s1">android:layout_toRightOf</span><span class="s3">=&quot;@+id/favor_time&quot;</span>
+            <span class="s1">android:layout_marginLeft</span><span class="s3">=&quot;10dp&quot;</span>
+            <span class="s1">android:textColor</span><span class="s3">=&quot;@color/dingwei&quot; </span>/&gt;
+
+        &lt;<span class="s4">TextView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/favor_text&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;下雪啦！！！&quot;</span>
+            <span class="s1">android:textSize</span><span class="s3">=&quot;14sp&quot;</span>
+            <span class="s1">android:layout_below</span><span class="s3">=&quot;@+id/favor_time&quot;</span>
+            <span class="s1">android:layout_toRightOf</span><span class="s3">=&quot;@+id/favor_touxiang&quot;</span>
+            <span class="s1">android:layout_marginLeft</span><span class="s3">=&quot;10dp&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;10dp&quot;</span>
+            <span class="s1">android:textColor</span><span class="s3">=&quot;@color/black&quot; </span>/&gt;
+    &lt;/<span class="s4">RelativeLayout</span>&gt;
+
+    &lt;<span class="s4">ImageView</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;25dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;25dp&quot;</span>
+        <span class="s1">android:src</span><span class="s3">=&quot;@mipmap/already_favor&quot;</span>
+        <span class="s1">android:layout_alignParentRight</span><span class="s3">=&quot;true&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;15dp&quot;</span>
+        <span class="s1">android:layout_marginRight</span><span class="s3">=&quot;10dp&quot; </span>/&gt;
+
+    &lt;<span class="s4">com.example.jiyi.CustomRoundAngleImageView</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/favor_notepic&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;300dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;125dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;90dp&quot;</span>
+        <span class="s1">android:layout_marginLeft</span><span class="s3">=&quot;85dp&quot;</span>
+        <span class="s1">android:scaleType</span><span class="s3">=&quot;centerCrop&quot;</span>
+        <span class="s1">android:src</span><span class="s3">=&quot;@drawable/sufe1&quot; </span>/&gt;
+&lt;/<span class="s4">RelativeLayout</span>&gt;</pre>
+</body>
+</html>

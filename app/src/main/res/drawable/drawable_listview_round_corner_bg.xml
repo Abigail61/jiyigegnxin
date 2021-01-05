@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <corners
+
+        android:radius = "2dp"
+
+        />
+
+
+    <!-- 背景填充,这是每个item 的背景色 -->
+    <solid
+        android:color="@color/white"
+        />
+
+    <!-- 描边 ,这是整个listView 的边框的颜色-->
+    <stroke
+        android:width="0.5dp"
+        android:color="@color/grey_777777"
+        />
+
+</shape>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">迹忆</string>
+    <string name="msg_top">消  息</string>
+    <string name="msg_mid1">赞与收藏</string>
+    <string name="msg_mid2">新增关注</string>
+    <string name="msg_mid3">评论与回复</string>
+    <string name="mainbar_label1">首页</string>
+    <string name="mainbar_label2">消息</string>
+    <string name="mainbar_label3">轨迹</string>
+    <string name="mainbar_label4">我的</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="chooseLocation">选择定位</string>
+    <string name="addLable">添加标签</string>
+    <string name="username">用户</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

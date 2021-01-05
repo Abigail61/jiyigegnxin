@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".messagefrag.Comment">
+    <RelativeLayout
+        android:id="@+id/comm_top_layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/comm_iv_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:src="@mipmap/it_back"
+            android:onClick="onClick"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="评论与回复"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/mainbar_focus"
+            />
+    </RelativeLayout>
+    <View
+        android:id="@+id/comm_v"
+        style="@style/line"/>
+    <ListView
+        android:id="@+id/comm_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/grey_light"
+        android:dividerHeight="1dp"
+        android:scrollbars="none">
+
+    </ListView>
+
+
+</LinearLayout>

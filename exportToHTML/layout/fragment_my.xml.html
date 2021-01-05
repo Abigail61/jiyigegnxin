@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>fragment_my.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000000; font-style: italic;}
+.s1 { color: #0000ff; font-weight: bold;}
+.s2 { color: #000000;}
+.s3 { color: #008000; font-weight: bold;}
+.s4 { color: #000080; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+fragment_my.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s3">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s3">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+&lt;<span class="s4">RelativeLayout </span><span class="s1">xmlns:android</span><span class="s3">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s3">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">xmlns:app</span><span class="s3">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s3">=&quot;match_parent&quot;</span>
+    <span class="s1">tools:context</span><span class="s3">=&quot;.myfrag.MyFragment&quot;</span>
+    <span class="s1">android:background</span><span class="s3">=&quot;@color/white&quot;</span>&gt;
+    &lt;<span class="s4">ImageView</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/grbj&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;200dp&quot;</span>
+        <span class="s1">app:srcCompat</span><span class="s3">=&quot;@mipmap/grbj&quot;</span>
+        <span class="s1">android:scaleType</span><span class="s3">=&quot;centerCrop&quot;</span>/&gt;
+    &lt;<span class="s4">RelativeLayout</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/head_mine&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;180dp&quot;</span>
+        <span class="s1">android:background</span><span class="s3">=&quot;@drawable/mine_head_bg&quot;</span>&gt;
+        &lt;<span class="s4">TextView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/mine_header_tv_username&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:gravity</span><span class="s3">=&quot;center&quot;</span>
+            <span class="s1">android:layout_margin</span><span class="s3">=&quot;15dp&quot;</span>
+            <span class="s1">android:padding</span><span class="s3">=&quot;20dp&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;@string/username&quot;</span>
+            <span class="s1">android:textColor</span><span class="s3">=&quot;@color/grey_777777&quot;</span>
+            <span class="s1">android:textSize</span><span class="s3">=&quot;38sp&quot;</span>
+            <span class="s1">android:textStyle</span><span class="s3">=&quot;bold&quot; </span>/&gt;
+        &lt;<span class="s4">ImageView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/mine_header_Iv_sex&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:padding</span><span class="s3">=&quot;20dp&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;30dp&quot;</span>
+            <span class="s1">android:layout_toRightOf</span><span class="s3">=&quot;@id/mine_header_tv_username&quot;</span>
+            <span class="s1">app:srcCompat</span><span class="s3">=&quot;@mipmap/female&quot; </span>/&gt;
+        &lt;<span class="s4">de.hdodenhof.circleimageview.CircleImageView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/mine_header_Iv_profilephoto&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;100dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;100dp&quot;</span>
+            <span class="s1">android:layout_toRightOf</span><span class="s3">=&quot;@id/mine_tx_imformation&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;20dp&quot;</span>
+            <span class="s1">android:layout_marginRight</span><span class="s3">=&quot;30dp&quot;</span>
+            <span class="s1">android:layout_marginLeft</span><span class="s3">=&quot;30dp&quot;</span>
+            <span class="s1">android:layout_marginBottom</span><span class="s3">=&quot;20dp&quot;</span>
+            <span class="s1">android:src</span><span class="s3">=&quot;@mipmap/touxiang&quot; </span>/&gt;
+        &lt;<span class="s4">TextView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/mine_tx_imformation&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;201dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_alignParentStart</span><span class="s3">=&quot;true&quot;</span>
+            <span class="s1">android:layout_alignParentLeft</span><span class="s3">=&quot;true&quot;</span>
+            <span class="s1">android:layout_alignParentTop</span><span class="s3">=&quot;true&quot;</span>
+            <span class="s1">android:layout_marginStart</span><span class="s3">=&quot;24dp&quot;</span>
+            <span class="s1">android:layout_marginLeft</span><span class="s3">=&quot;24dp&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;105dp&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;5关注  1粉丝  3获赞&quot;</span>
+            <span class="s1">android:gravity</span><span class="s3">=&quot;center&quot;</span>
+            <span class="s1">android:background</span><span class="s3">=&quot;@drawable/mineinformation&quot; </span>/&gt;
+    &lt;/<span class="s4">RelativeLayout</span>&gt;
+    &lt;<span class="s4">com.google.android.material.tabs.TabLayout</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/my_tabs&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;30dp&quot;</span>
+        <span class="s1">android:layout_below</span><span class="s3">=&quot;@id/head_mine&quot;</span>
+        <span class="s1">android:layout_centerHorizontal</span><span class="s3">=&quot;true&quot;</span>
+        <span class="s1">app:tabGravity</span><span class="s3">=&quot;center&quot;</span>
+        <span class="s1">app:tabMode</span><span class="s3">=&quot;fixed&quot;</span>
+        <span class="s1">app:tabTextColor</span><span class="s3">=&quot;@color/mainbar_light&quot;</span>
+        <span class="s1">app:tabSelectedTextColor</span><span class="s3">=&quot;@color/maincolor&quot;</span>
+        <span class="s1">app:tabIndicatorColor</span><span class="s3">=&quot;@color/maincolor4&quot;</span>
+        <span class="s1">app:tabTextAppearance</span><span class="s3">=&quot;@style/MyTabLayoutTextStyle&quot;</span>/&gt;
+    &lt;<span class="s4">View</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/my_v&quot;</span>
+        <span class="s1">android:layout_below</span><span class="s3">=&quot;@id/my_tabs&quot;</span>
+        <span class="s1">style</span><span class="s3">=&quot;@style/line&quot;</span>/&gt;
+    &lt;<span class="s4">androidx.viewpager.widget.ViewPager</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/my_vp&quot;</span>
+        <span class="s1">android:layout_below</span><span class="s3">=&quot;@id/my_v&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;match_parent&quot;</span>&gt;
+    &lt;/<span class="s4">androidx.viewpager.widget.ViewPager</span>&gt;
+
+&lt;/<span class="s4">RelativeLayout</span>&gt;</pre>
+</body>
+</html>

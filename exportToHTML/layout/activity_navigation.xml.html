@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>activity_navigation.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000000; font-style: italic;}
+.s1 { color: #0000ff; font-weight: bold;}
+.s2 { color: #000000;}
+.s3 { color: #008000; font-weight: bold;}
+.s4 { color: #000080; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_navigation.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s3">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s3">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+&lt;<span class="s4">RelativeLayout </span><span class="s1">xmlns:android</span><span class="s3">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot; </span><span class="s1">android:layout_height</span><span class="s3">=&quot;match_parent&quot;</span>&gt;
+
+    &lt;<span class="s4">RadioGroup</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/main_rg&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;60dp&quot;</span>
+        <span class="s1">android:orientation</span><span class="s3">=&quot;horizontal&quot;</span>
+        <span class="s1">android:background</span><span class="s3">=&quot;@color/grey_f3f3f3&quot;</span>
+        <span class="s1">android:layout_alignParentBottom</span><span class="s3">=&quot;true&quot;</span>
+        <span class="s1">android:padding</span><span class="s3">=&quot;5dp&quot;</span>&gt;
+        &lt;<span class="s4">RadioButton</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/main_rb1&quot;</span>
+            <span class="s1">style</span><span class="s3">=&quot;@style/main_rb&quot;</span>
+            <span class="s1">android:drawableTop</span><span class="s3">=&quot;@drawable/main_rb1&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;@string/mainbar_label1&quot;</span>
+            <span class="s1">android:checked</span><span class="s3">=&quot;true&quot;</span>/&gt;
+        &lt;<span class="s4">RadioButton</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/main_rb2&quot;</span>
+            <span class="s1">style</span><span class="s3">=&quot;@style/main_rb&quot;</span>
+            <span class="s1">android:drawableTop</span><span class="s3">=&quot;@drawable/main_rb2&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;@string/mainbar_label2&quot;</span>/&gt;
+        &lt;<span class="s4">RadioButton</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/main_rb3&quot;</span>
+            <span class="s1">style</span><span class="s3">=&quot;@style/main_rb&quot;</span>
+            <span class="s1">android:drawableTop</span><span class="s3">=&quot;@drawable/main_rb3&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;@string/mainbar_label3&quot;</span>/&gt;
+        &lt;<span class="s4">RadioButton</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/main_rb4&quot;</span>
+            <span class="s1">style</span><span class="s3">=&quot;@style/main_rb&quot;</span>
+            <span class="s1">android:drawableTop</span><span class="s3">=&quot;@drawable/main_rb4&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;@string/mainbar_label4&quot;</span>/&gt;
+    &lt;/<span class="s4">RadioGroup</span>&gt;
+    &lt;<span class="s4">LinearLayout</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/main_layout_center&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;match_parent&quot;</span>
+        <span class="s1">android:orientation</span><span class="s3">=&quot;vertical&quot;</span>
+        <span class="s1">android:layout_above</span><span class="s3">=&quot;@id/main_rg&quot;</span>&gt;
+    &lt;/<span class="s4">LinearLayout</span>&gt;
+
+&lt;/<span class="s4">RelativeLayout</span>&gt;</pre>
+</body>
+</html>

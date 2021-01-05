@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".messagefrag.Like">
+    <RelativeLayout
+        android:id="@+id/like_top_layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/like_iv_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:src="@mipmap/it_back"
+            android:onClick="onClick"/>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/like_tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            app:tabGravity="center"
+            app:tabMode="fixed"
+            app:tabTextColor="@color/mainbar_light"
+            app:tabSelectedTextColor="@color/mainbar_focus"
+            app:tabIndicatorColor="@color/mainbar"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/like_v"
+        style="@style/line"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/like_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

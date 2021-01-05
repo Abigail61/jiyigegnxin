@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/white"
+    android:paddingHorizontal="10dp">
+    <TextView
+        android:id="@+id/timemark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020年12月12日"
+        android:textSize="14sp"
+        android:layout_marginTop="40dp"
+        />
+    <LinearLayout
+        android:id="@+id/atimeline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="45dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/drop" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="160dp"
+            android:background="@color/grey_f3f3f3"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mynotetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试测试测试"
+        android:layout_toRightOf="@+id/atimeline"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp" />
+
+    <com.example.jiyi.CustomRoundAngleImageView
+        android:id="@+id/notepic"
+        android:layout_width="290dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/mynotetext"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sufe1" />
+</RelativeLayout>

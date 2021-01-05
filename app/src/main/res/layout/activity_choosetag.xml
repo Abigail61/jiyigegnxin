@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="24dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/toppp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="24dp">
+
+        <ImageView
+            android:id="@+id/backtoNewNote"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/it_back" />
+
+        <EditText
+            android:id="@+id/shuruTag"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/main_button_bg"
+            android:hint="自定义标签..."
+            android:paddingLeft="10dp" />
+
+        <ImageButton
+            android:id="@+id/Tagok"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginLeft="8dp"
+            android:background="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ok" />
+    </LinearLayout>
+
+    <com.example.jiyi.FlowLayout
+        android:id="@+id/alltags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/exist1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/main_button_bg"
+            android:padding="5dp"
+            android:text="上海财经大学"
+            android:textColor="@color/maincolor" />
+
+        <TextView
+            android:id="@+id/exist2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/main_button_bg"
+            android:padding="5dp"
+            android:text="武东路"
+            android:textColor="@color/maincolor" />
+
+        <TextView
+            android:id="@+id/exist3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/main_button_bg"
+            android:padding="5dp"
+            android:text="水塔"
+            android:textColor="@color/maincolor" />
+
+        <TextView
+            android:id="@+id/exist4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/main_button_bg"
+            android:padding="5dp"
+            android:text="紫藤花"
+            android:textColor="@color/maincolor" />
+
+        <TextView
+            android:id="@+id/exist5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/main_button_bg"
+            android:padding="5dp"
+            android:text="大学生生活"
+            android:textColor="@color/maincolor" />
+
+        <TextView
+            android:id="@+id/exist6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/main_button_bg"
+            android:padding="5dp"
+            android:text="第三教学楼"
+            android:textColor="@color/maincolor" />
+
+        <TextView
+            android:id="@+id/exist7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/main_button_bg"
+            android:padding="5dp"
+            android:text="下雪啦"
+            android:textColor="@color/maincolor" />
+
+        <TextView
+            android:id="@+id/exist8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/main_button_bg"
+            android:padding="5dp"
+            android:text="信息管理与工程学院"
+            android:textColor="@color/maincolor" />
+
+        <TextView
+            android:id="@+id/exist9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/main_button_bg"
+            android:padding="5dp"
+            android:text="猫猫"
+            android:textColor="@color/maincolor" />
+        <TextView
+            android:id="@+id/exist10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/main_button_bg"
+            android:padding="5dp"
+            android:text="图书馆馆长大白"
+            android:textColor="@color/maincolor" />
+
+    </com.example.jiyi.FlowLayout>
+
+
+</LinearLayout>

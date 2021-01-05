@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="mainbar">#967249</color>
+    <color name="mainbar_focus">#43341B</color>
+    <color name="mainbar_light">#867A65</color>
+    <color name="msg_like">#ED784A</color>
+    <color name="msg_fans">#FFBA7B</color>
+    <color name="msg_comment">#BF9066</color>
+    <color name="grey_light">#eeeeee</color>
+    <color name="grey_heavy">#7d7d7d</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="grey_f3f3f3">#f3f3f3</color>
+    <color name="theme_967249">#967249</color>
+    <color name="grey_777777">#777777</color>
+<!--    <color name="topic">#FF400303</color>-->
+    <color name="topic">#CB9574</color>
+    <color name="maincolor2">#43341B</color>
+    <color name="maincolor3">#45967249</color>
+    <color name="maincolor4">#D5ECB88A</color>
+    <color name="maincolor">#967249</color>
+    <color name="checked">#FFFFFFFF</color>
+    <color name="normal">#777777</color>
+    <color name="dingwei">#0490BA</color>
+
+</resources>

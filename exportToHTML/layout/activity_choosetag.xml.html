@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>activity_choosetag.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000000; font-style: italic;}
+.s1 { color: #0000ff; font-weight: bold;}
+.s2 { color: #000000;}
+.s3 { color: #008000; font-weight: bold;}
+.s4 { color: #000080; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_choosetag.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s3">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s3">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+&lt;<span class="s4">LinearLayout </span><span class="s1">xmlns:android</span><span class="s3">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s3">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s3">=&quot;match_parent&quot;</span>
+    <span class="s1">android:background</span><span class="s3">=&quot;@color/white&quot;</span>
+    <span class="s1">android:padding</span><span class="s3">=&quot;24dp&quot;</span>
+    <span class="s1">android:orientation</span><span class="s3">=&quot;vertical&quot;</span>&gt;
+
+    &lt;<span class="s4">LinearLayout</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/toppp&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;24dp&quot;</span>
+        <span class="s1">android:orientation</span><span class="s3">=&quot;horizontal&quot;</span>
+        <span class="s1">tools:layout_editor_absoluteX</span><span class="s3">=&quot;24dp&quot;</span>&gt;
+
+        &lt;<span class="s4">ImageView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/backtoNewNote&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;20dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;20dp&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;10dp&quot;</span>
+            <span class="s1">android:src</span><span class="s3">=&quot;@mipmap/it_back&quot; </span>/&gt;
+
+        &lt;<span class="s4">EditText</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/shuruTag&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;250dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;40dp&quot;</span>
+            <span class="s1">android:layout_marginLeft</span><span class="s3">=&quot;10dp&quot;</span>
+            <span class="s1">android:background</span><span class="s3">=&quot;@drawable/main_button_bg&quot;</span>
+            <span class="s1">android:hint</span><span class="s3">=&quot;自定义标签...&quot;</span>
+            <span class="s1">android:paddingLeft</span><span class="s3">=&quot;10dp&quot; </span>/&gt;
+
+        &lt;<span class="s4">ImageButton</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/Tagok&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;20dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;20dp&quot;</span>
+            <span class="s1">android:layout_marginVertical</span><span class="s3">=&quot;10dp&quot;</span>
+            <span class="s1">android:layout_marginLeft</span><span class="s3">=&quot;8dp&quot;</span>
+            <span class="s1">android:background</span><span class="s3">=&quot;@color/white&quot;</span>
+            <span class="s1">android:scaleType</span><span class="s3">=&quot;centerCrop&quot;</span>
+            <span class="s1">android:src</span><span class="s3">=&quot;@mipmap/ok&quot; </span>/&gt;
+    &lt;/<span class="s4">LinearLayout</span>&gt;
+
+    &lt;<span class="s4">com.example.jiyi.FlowLayout</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/alltags&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;20dp&quot;</span>&gt;
+
+        &lt;<span class="s4">TextView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/exist1&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_margin</span><span class="s3">=&quot;8dp&quot;</span>
+            <span class="s1">android:background</span><span class="s3">=&quot;@drawable/main_button_bg&quot;</span>
+            <span class="s1">android:padding</span><span class="s3">=&quot;5dp&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;上海财经大学&quot;</span>
+            <span class="s1">android:textColor</span><span class="s3">=&quot;@color/maincolor&quot; </span>/&gt;
+
+        &lt;<span class="s4">TextView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/exist2&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_margin</span><span class="s3">=&quot;8dp&quot;</span>
+            <span class="s1">android:background</span><span class="s3">=&quot;@drawable/main_button_bg&quot;</span>
+            <span class="s1">android:padding</span><span class="s3">=&quot;5dp&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;武东路&quot;</span>
+            <span class="s1">android:textColor</span><span class="s3">=&quot;@color/maincolor&quot; </span>/&gt;
+
+        &lt;<span class="s4">TextView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/exist3&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_margin</span><span class="s3">=&quot;8dp&quot;</span>
+            <span class="s1">android:background</span><span class="s3">=&quot;@drawable/main_button_bg&quot;</span>
+            <span class="s1">android:padding</span><span class="s3">=&quot;5dp&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;水塔&quot;</span>
+            <span class="s1">android:textColor</span><span class="s3">=&quot;@color/maincolor&quot; </span>/&gt;
+
+        &lt;<span class="s4">TextView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/exist4&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_margin</span><span class="s3">=&quot;8dp&quot;</span>
+            <span class="s1">android:background</span><span class="s3">=&quot;@drawable/main_button_bg&quot;</span>
+            <span class="s1">android:padding</span><span class="s3">=&quot;5dp&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;紫藤花&quot;</span>
+            <span class="s1">android:textColor</span><span class="s3">=&quot;@color/maincolor&quot; </span>/&gt;
+
+        &lt;<span class="s4">TextView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/exist5&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_margin</span><span class="s3">=&quot;8dp&quot;</span>
+            <span class="s1">android:background</span><span class="s3">=&quot;@drawable/main_button_bg&quot;</span>
+            <span class="s1">android:padding</span><span class="s3">=&quot;5dp&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;大学生生活&quot;</span>
+            <span class="s1">android:textColor</span><span class="s3">=&quot;@color/maincolor&quot; </span>/&gt;
+
+        &lt;<span class="s4">TextView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/exist6&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_margin</span><span class="s3">=&quot;8dp&quot;</span>
+            <span class="s1">android:background</span><span class="s3">=&quot;@drawable/main_button_bg&quot;</span>
+            <span class="s1">android:padding</span><span class="s3">=&quot;5dp&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;第三教学楼&quot;</span>
+            <span class="s1">android:textColor</span><span class="s3">=&quot;@color/maincolor&quot; </span>/&gt;
+
+        &lt;<span class="s4">TextView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/exist7&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_margin</span><span class="s3">=&quot;8dp&quot;</span>
+            <span class="s1">android:background</span><span class="s3">=&quot;@drawable/main_button_bg&quot;</span>
+            <span class="s1">android:padding</span><span class="s3">=&quot;5dp&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;下雪啦&quot;</span>
+            <span class="s1">android:textColor</span><span class="s3">=&quot;@color/maincolor&quot; </span>/&gt;
+
+        &lt;<span class="s4">TextView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/exist8&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_margin</span><span class="s3">=&quot;8dp&quot;</span>
+            <span class="s1">android:background</span><span class="s3">=&quot;@drawable/main_button_bg&quot;</span>
+            <span class="s1">android:padding</span><span class="s3">=&quot;5dp&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;信息管理与工程学院&quot;</span>
+            <span class="s1">android:textColor</span><span class="s3">=&quot;@color/maincolor&quot; </span>/&gt;
+
+        &lt;<span class="s4">TextView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/exist9&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_margin</span><span class="s3">=&quot;8dp&quot;</span>
+            <span class="s1">android:background</span><span class="s3">=&quot;@drawable/main_button_bg&quot;</span>
+            <span class="s1">android:padding</span><span class="s3">=&quot;5dp&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;猫猫&quot;</span>
+            <span class="s1">android:textColor</span><span class="s3">=&quot;@color/maincolor&quot; </span>/&gt;
+        &lt;<span class="s4">TextView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/exist10&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_margin</span><span class="s3">=&quot;8dp&quot;</span>
+            <span class="s1">android:background</span><span class="s3">=&quot;@drawable/main_button_bg&quot;</span>
+            <span class="s1">android:padding</span><span class="s3">=&quot;5dp&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;图书馆馆长大白&quot;</span>
+            <span class="s1">android:textColor</span><span class="s3">=&quot;@color/maincolor&quot; </span>/&gt;
+
+    &lt;/<span class="s4">com.example.jiyi.FlowLayout</span>&gt;
+
+
+&lt;/<span class="s4">LinearLayout</span>&gt;</pre>
+</body>
+</html>

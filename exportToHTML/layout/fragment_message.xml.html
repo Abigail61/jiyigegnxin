@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>fragment_message.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000000; font-style: italic;}
+.s1 { color: #0000ff; font-weight: bold;}
+.s2 { color: #000000;}
+.s3 { color: #008000; font-weight: bold;}
+.s4 { color: #000080; font-weight: bold;}
+.s5 { color: #808080; font-style: italic;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+fragment_message.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s3">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s3">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+&lt;<span class="s4">RelativeLayout </span><span class="s1">xmlns:android</span><span class="s3">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s3">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s3">=&quot;match_parent&quot;</span>
+    <span class="s1">tools:context</span><span class="s3">=&quot;.messagefrag.MessageFragment&quot;</span>&gt;
+
+    <span class="s5">&lt;!-- TODO: Update blank fragment layout --&gt;</span>
+    &lt;<span class="s4">RelativeLayout</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/msg_top_layout&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;50dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;20dp&quot;</span>
+        <span class="s1">android:background</span><span class="s3">=&quot;@color/white&quot;</span>&gt;
+        &lt;<span class="s4">TextView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/msg_top_tv1&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;@string/msg_top&quot;</span>
+            <span class="s1">android:textSize</span><span class="s3">=&quot;20sp&quot;</span>
+            <span class="s1">android:gravity</span><span class="s3">=&quot;center&quot;</span>
+            <span class="s1">android:layout_alignParentBottom</span><span class="s3">=&quot;true&quot;</span>
+            <span class="s1">android:paddingBottom</span><span class="s3">=&quot;6dp&quot;</span>
+            <span class="s1">android:textColor</span><span class="s3">=&quot;@color/mainbar_focus&quot;</span>/&gt;
+    &lt;/<span class="s4">RelativeLayout</span>&gt;
+    &lt;<span class="s4">View</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/msg_line1&quot;</span>
+        <span class="s1">style</span><span class="s3">=&quot;@style/line&quot;</span>
+        <span class="s1">android:layout_below</span><span class="s3">=&quot;@id/msg_top_layout&quot;</span>/&gt;
+
+    &lt;<span class="s4">LinearLayout</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/msg_mid_layout&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:background</span><span class="s3">=&quot;@color/white&quot;</span>
+        <span class="s1">android:layout_below</span><span class="s3">=&quot;@id/msg_line1&quot;</span>
+        <span class="s1">android:orientation</span><span class="s3">=&quot;horizontal&quot;</span>
+        <span class="s1">android:gravity</span><span class="s3">=&quot;center&quot;</span>&gt;
+
+        &lt;<span class="s4">LinearLayout</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/msg_mid_layout_1&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:orientation</span><span class="s3">=&quot;vertical&quot;</span>&gt;
+            &lt;<span class="s4">ImageView</span>
+                <span class="s1">android:id</span><span class="s3">=&quot;@+id/msg_mid_iv_like&quot;</span>
+                <span class="s1">style</span><span class="s3">=&quot;@style/msg_mid_iv&quot;</span>
+                <span class="s1">android:src</span><span class="s3">=&quot;@mipmap/like&quot;</span>
+                <span class="s1">android:background</span><span class="s3">=&quot;@drawable/msg_like_bg&quot;</span>
+                <span class="s1">android:onClick</span><span class="s3">=&quot;onClick&quot;</span>
+                <span class="s1">tools:ignore</span><span class="s3">=&quot;OnClick&quot; </span>/&gt;
+            &lt;<span class="s4">TextView</span>
+                <span class="s1">android:text</span><span class="s3">=&quot;@string/msg_mid1&quot;</span>
+                <span class="s1">style</span><span class="s3">=&quot;@style/msg_mid_tv&quot;</span>/&gt;
+        &lt;/<span class="s4">LinearLayout</span>&gt;
+
+        &lt;<span class="s4">LinearLayout</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/msg_mid_layout_2&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:orientation</span><span class="s3">=&quot;vertical&quot;</span>&gt;
+            &lt;<span class="s4">ImageView</span>
+                <span class="s1">android:id</span><span class="s3">=&quot;@+id/msg_mid_iv_fans&quot;</span>
+                <span class="s1">style</span><span class="s3">=&quot;@style/msg_mid_iv&quot;</span>
+                <span class="s1">android:src</span><span class="s3">=&quot;@mipmap/fans&quot;</span>
+                <span class="s1">android:background</span><span class="s3">=&quot;@drawable/msg_fans_bg&quot;</span>
+                <span class="s1">android:onClick</span><span class="s3">=&quot;onClick&quot;</span>/&gt;
+            &lt;<span class="s4">TextView</span>
+                <span class="s1">android:text</span><span class="s3">=&quot;@string/msg_mid2&quot;</span>
+                <span class="s1">style</span><span class="s3">=&quot;@style/msg_mid_tv&quot;</span>/&gt;
+        &lt;/<span class="s4">LinearLayout</span>&gt;
+
+        &lt;<span class="s4">LinearLayout</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/msg_mid_layout_3&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:orientation</span><span class="s3">=&quot;vertical&quot;</span>&gt;
+            &lt;<span class="s4">ImageView</span>
+                <span class="s1">android:id</span><span class="s3">=&quot;@+id/msg_mid_iv_comment&quot;</span>
+                <span class="s1">style</span><span class="s3">=&quot;@style/msg_mid_iv&quot;</span>
+                <span class="s1">android:src</span><span class="s3">=&quot;@mipmap/comment&quot;</span>
+                <span class="s1">android:background</span><span class="s3">=&quot;@drawable/msg_comment_bg&quot;</span>
+                <span class="s1">android:onClick</span><span class="s3">=&quot;onClick&quot;</span>/&gt;
+            &lt;<span class="s4">TextView</span>
+                <span class="s1">android:text</span><span class="s3">=&quot;@string/msg_mid3&quot;</span>
+                <span class="s1">style</span><span class="s3">=&quot;@style/msg_mid_tv&quot;</span>/&gt;
+        &lt;/<span class="s4">LinearLayout</span>&gt;
+    &lt;/<span class="s4">LinearLayout</span>&gt;
+    &lt;<span class="s4">View</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/msg_line2&quot;</span>
+        <span class="s1">style</span><span class="s3">=&quot;@style/line&quot;</span>
+        <span class="s1">android:layout_below</span><span class="s3">=&quot;@id/msg_mid_layout&quot;</span>/&gt;
+    &lt;<span class="s4">ListView</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/msg_lv&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_below</span><span class="s3">=&quot;@id/msg_line2&quot;</span>
+        <span class="s1">android:padding</span><span class="s3">=&quot;10dp&quot;</span>
+        <span class="s1">android:background</span><span class="s3">=&quot;@color/white&quot;</span>
+        <span class="s1">android:divider</span><span class="s3">=&quot;@color/grey_light&quot;</span>
+        <span class="s1">android:dividerHeight</span><span class="s3">=&quot;1dp&quot;</span>
+        <span class="s1">android:scrollbars</span><span class="s3">=&quot;none&quot;</span>/&gt;
+
+    &lt;<span class="s4">ImageButton</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/main_btn_more&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;50dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;50dp&quot;</span>
+        <span class="s1">android:src</span><span class="s3">=&quot;@mipmap/newbtn&quot;</span>
+        <span class="s1">android:layout_alignParentRight</span><span class="s3">=&quot;true&quot;</span>
+        <span class="s1">android:layout_alignParentBottom</span><span class="s3">=&quot;true&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s3">=&quot;20dp&quot;</span>
+        <span class="s1">android:layout_marginRight</span><span class="s3">=&quot;50dp&quot;</span>
+        <span class="s1">android:background</span><span class="s3">=&quot;@drawable/drawable_add_btn_bg&quot;</span>
+        <span class="s1">android:onClick</span><span class="s3">=&quot;onClick&quot;</span>/&gt;
+&lt;/<span class="s4">RelativeLayout</span>&gt;</pre>
+</body>
+</html>

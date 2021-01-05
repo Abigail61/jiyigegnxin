@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:background="@color/white"
+app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+<ImageView
+    android:id="@+id/imageView2"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    android:scaleType="centerCrop"
+    app:srcCompat="@drawable/sufe1" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/abc_vector_test"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        />
+
+
+    <RelativeLayout
+    android:id="@+id/informax"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/imageView2">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imagetouxiang"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/xiaobing"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <LinearLayout
+        android:id="@+id/information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imagetouxiang"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="小冰"
+            android:textColor="@color/theme_967249"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="1月5日 14:34"
+            android:textColor="@color/grey_777777"></TextView>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/main_button_bg"
+        android:text="+关注"
+        android:textColor="@color/theme_967249"
+        app:backgroundTint="@color/grey_f3f3f3"></Button>
+
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/blt_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:text="小寒时节，正同云暮惨，劲风朝烈。信早梅、偏占阳和，向日暖临溪，一枝先发。"
+        android:textColor="@color/black"
+        android:textSize="16sp"></TextView>
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/mostdingwei"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/informax">
+
+    <ImageView
+        android:id="@+id/dingweitag"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/dingweitag"></ImageView>
+
+    <LinearLayout
+        android:id="@+id/dingwei_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/dingweitag"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上海财经大学"
+            android:textColor="#00BCFF"></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="水塔"
+                android:textColor="@color/grey_777777"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="小寒时节"
+                android:textColor="@color/grey_777777"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+<TextView
+    android:id="@+id/pinglun"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/mostdingwei"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="15dp"
+    android:text="评论"
+    android:textColor="@color/black"
+    android:textSize="20dp"
+    android:textStyle="bold"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pinglun">
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pinglun1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/cat"></de.hdodenhof.circleimageview.CircleImageView>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/pinglun1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="猫猫"
+                    android:textColor="@color/theme_967249"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="1月5日 14:34"
+                    android:textColor="@color/grey_777777"></TextView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:text="猫猫觉得很诗意\n只知道是古诗，看不太懂。"
+                android:textColor="@color/black"
+                android:textSize="16sp"></TextView>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+

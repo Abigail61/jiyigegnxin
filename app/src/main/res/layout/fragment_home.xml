@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Navigation">
+
+    <RelativeLayout
+        android:id="@+id/main_top_layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/main_iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/search"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/main_line1"
+        style="@style/line"
+        android:layout_below="@id/main_top_layout"/>
+
+    <ImageButton
+        android:id="@+id/picture1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:layout_below="@id/main_line1"
+        android:padding="14dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sufe1"
+        android:background="#00FF0000"
+        android:onClick="onClick1"/>
+
+    <RelativeLayout
+        android:layout_width="398dp"
+        android:layout_height="190dp"
+        android:layout_below="@id/main_line1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="34dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_mainlv_tv_title0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/main_button_bg"
+            android:fadeScrollbars="false"
+            android:hapticFeedbackEnabled="false"
+            android:padding="4dp"
+            android:shadowColor="#ECE2E2"
+            android:shadowRadius="100"
+            android:text="上海财经大学"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/item_mainlv_tv_lable0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/item_mainlv_tv_title0"
+            android:background="@drawable/main_button_bg"
+            android:padding="4dp"
+            android:text="水塔侧影"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/item_mainlv_tv_like0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/main_button_bg"
+            android:padding="2dp"
+            android:text="609"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <ImageButton
+            android:id="@+id/item_mainlv_Iv_like0"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@id/item_mainlv_tv_like0"
+            android:src="@mipmap/good" />
+
+        <TextView
+            android:id="@+id/tx1"
+            android:layout_width="354dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="74dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="19dp"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:singleLine="false"
+            android:text=" 小寒"
+            android:textColor="@color/white"
+            android:textSize="38dp"
+            android:typeface="normal" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/picture2"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_below="@id/picture1"
+        android:padding="18.5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sufe2"
+        android:background="#00FF0000"
+        android:onClick="onClick1"/>
+
+    <RelativeLayout
+        android:layout_width="412dp"
+        android:layout_height="139dp"
+        android:layout_below="@id/picture1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="72dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="385dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="19dp"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:singleLine="false"
+            android:text="今日闲叙"
+            android:textColor="@color/white"
+            android:textSize="38dp"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/item_mainlv_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/main_button_bg"
+            android:fadeScrollbars="false"
+            android:hapticFeedbackEnabled="false"
+            android:padding="4dp"
+            android:shadowColor="#ECE2E2"
+            android:shadowRadius="100"
+            android:text="上海财经大学"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/item_mainlv_tv_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/item_mainlv_tv_title"
+            android:background="@drawable/main_button_bg"
+            android:padding="4dp"
+            android:text="教技"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/item_mainlv_tv_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/main_button_bg"
+            android:padding="2dp"
+            android:text="609"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <ImageButton
+            android:id="@+id/item_mainlv_Iv_like"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@id/item_mainlv_tv_like"
+            android:src="@mipmap/good" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/picture3"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_below="@id/picture2"
+        android:padding="15dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sufe3"
+        android:background="#00FF0000"
+        android:onClick="onClick1"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="148dp"
+        android:layout_below="@id/picture2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="52dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="374dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="19dp"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:singleLine="false"
+            android:text="花开靡荼"
+            android:textColor="@color/white"
+            android:textSize="38dp"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/item_mainlv_tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/main_button_bg"
+            android:fadeScrollbars="false"
+            android:hapticFeedbackEnabled="false"
+            android:padding="4dp"
+            android:shadowColor="#ECE2E2"
+            android:shadowRadius="100"
+            android:text="紫藤花"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/item_mainlv_tv_lable2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/item_mainlv_tv_title2"
+            android:background="@drawable/main_button_bg"
+            android:padding="4dp"
+            android:text="黄叶"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/item_mainlv_tv_like2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/main_button_bg"
+            android:padding="2dp"
+            android:text="609"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <ImageButton
+            android:id="@+id/item_mainlv_Iv_like2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@id/item_mainlv_tv_like2"
+            android:src="@mipmap/good" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/main_btn_more"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/newbtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/drawable_add_btn_bg"
+        android:onClick="onClick"/>
+
+</RelativeLayout>

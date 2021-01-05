@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:background="@color/white">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/item_likelv_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/avator_test"/>
+    <LinearLayout
+        android:id="@+id/item_likelv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/item_likelv_iv"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:id="@+id/item_msglv_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户1"
+            android:textColor="@color/mainbar_focus"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/item_msglv_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/grey_heavy"
+            android:text="赞了你的便利贴"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:id="@+id/item_likelv_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020/12/11"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/item_likelv_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/item_likelv_user"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@color/grey_light"
+        android:layout_toRightOf="@id/item_likelv_iv">
+        <TextView
+            android:id="@+id/item_likelv_preview_tv"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:text="“ 今天去了公园玩! ”"
+            />
+        <ImageView
+            android:id="@+id/item_likelv_preview_iv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:src="@mipmap/avator_test"/>
+    </RelativeLayout>
+
+</RelativeLayout>
